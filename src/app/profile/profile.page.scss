@@ -1,0 +1,89 @@
+:root {
+  --primary-color: #000;
+  --secondary-color: #fff;
+  --text-color: #333;
+  --background-color: #fff;
+}
+
+ion-header {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+}
+
+ion-toolbar {
+  background-color: var(--secondary-color);
+}
+
+ion-title {
+  font-size: 1.5rem;
+}
+
+ion-content {
+  background-color: var(--background-color);
+}
+
+ion-list {
+  padding: 10px;
+}
+
+ion-item {
+  font-size: 1rem;
+  color: var(--text-color);
+}
+
+ion-label {
+  margin-right: 10px;
+}
+
+.account-info {
+  font-size: 1rem;
+  color: var(--text-color);
+}
+
+.account-name {
+  font-size: 1.5rem;
+}
+
+ion-item {
+  @extend .account-info;
+}
+
+ion-item ion-label {
+  @extend .account-name;
+}
+
+ion-header {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+}
+
+ion-toolbar {
+  background-color: var(--secondary-color);
+}
+
+ion-title {
+  font-size: 1.5rem;
+}
+
+ion-content {
+  background-color: var(--background-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ion-list {
+  padding: 10px;
+}
+
+ion-item {
+  font-size: 1rem;
+  color: var(--text-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ion-label {
+  margin-right: 10px;
+}

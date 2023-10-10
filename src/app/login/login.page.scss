@@ -1,0 +1,44 @@
+.floating-label input[type="email"]:focus+label,
+.floating-label input[type="email"]:valid+label {
+  transform: translateY(-1.5rem);
+  font-size: 0.8em;
+  opacity: 0.7;
+}
+
+.txt_h1p {
+  text-align: center;
+  font-weight: bold;
+}
+
+.txt_login {
+  text-align: center;
+}
+
+.txt_h1 {
+  font-size: 17px;
+}
+
+// .email {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+// }
+
+.btn_icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+#btn_add {
+  color: aquamarine;
+}
+
+#btn_delete {
+  color: red;
+}
+
+#btn_all {
+  color: #FDF5E6;
+}

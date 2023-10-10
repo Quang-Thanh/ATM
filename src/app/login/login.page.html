@@ -1,0 +1,43 @@
+<ion-content>
+  <div class="txt_h1p">
+    
+    <p class="txt_p"><ion-icon name="logo-capacitor" style="margin-right: 5px;"></ion-icon>Login TMBank</p>
+  </div>
+
+  <div class="txt_login">
+    <h1 class="txt_h1">-- Đăng nhập --</h1>
+  </div>
+  
+  <ion-card>
+    <ion-item class="email">
+      <ion-label position="floating" style="margin-left: 25px;">
+        Email
+      </ion-label>
+      <ion-input type="email" [(ngModel)]="email" value="@gmail.com">
+        <ion-icon name="person-circle-outline" style="padding: 5px;"></ion-icon>
+      </ion-input>
+    </ion-item>
+
+    <ion-item class="pass">
+      <ion-label position="floating" style="margin-left: 25px;">Password</ion-label>
+      <ion-input
+        type="password"
+        [(ngModel)]="password"
+        (keyup.enter)="login()"
+        value="password"
+      >
+        <ion-icon name="key-outline" style="padding: 5px;"></ion-icon>
+      </ion-input>
+    </ion-item>
+  </ion-card>
+
+  <ion-button class="btn_icon" expand="solid" (click)="login()">Đăng nhập</ion-button>
+
+  <ion-button id="btn_add" class="btn_icon" expand="solid" (click)="addUser()"><ion-icon name="add-outline"></ion-icon></ion-button>
+
+  <ion-button id="btn_delete" class="btn_icon" expand="solid" (click)="deleteUser()"><ion-icon name="trash-outline"></ion-icon></ion-button>
+
+  <ion-button id="btn_all" class="btn_icon" expand="solid" (click)="viewAll()"><ion-icon name="document-text-outline"></ion-icon>
+  </ion-button>
+
+</ion-content>
